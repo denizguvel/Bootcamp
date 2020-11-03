@@ -1,0 +1,36 @@
+# Deniz Guvel - HW1
+import json
+print("...Merhaba, sistemimize hos geldiniz... Lutfen asagıdaki bilgileri eksiksiz bir sekilde doldurunuz...")
+
+# Kullanıcıdan input alma işlemi
+ad = str(input("Ad: "))
+soyad = str(input("Soyad: "))
+
+# String concatanation
+print("Tam Ad: {} {}" .format(ad, soyad))
+
+cinsiyet = str(input("Cinsiyet: "))
+ssn = int(input("SSN: "))
+dogum_yili = int(input("Dogum Yili: "))
+adres = str(input("Adres: "))
+yas = str(input("Yas: "))
+
+#.JSON
+Data ={
+"Ad" : ad,
+"Soyad" : soyad,
+
+# String concatanation
+"Tam Ad" : ad + " " + soyad,
+
+"Cinsiyet" : cinsiyet,
+"SSN" : ssn,
+"Dogum Yili" : dogum_yili,
+"Adres" : adres,
+"Yas" : yas
+
+}
+
+print("...Bilgilerinizi eksiksiz doldurdugunuz icin tesekkur ederiz...")
+json_object = json.dumps(Data, indent = 4) 
+print(json_object)
