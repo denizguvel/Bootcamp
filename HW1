@@ -2,7 +2,7 @@
 import json
 print("...Merhaba, sistemimize hos geldiniz... Lutfen asagıdaki bilgileri eksiksiz bir sekilde doldurunuz...")
 
-# Kullanıcıdan input alma işlemi
+# Kullanıcıdan input alma islemi
 ad = str(input("Ad: "))
 soyad = str(input("Soyad: "))
 
